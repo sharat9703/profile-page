@@ -1,25 +1,67 @@
 import React from "react";
-import { Container } from "react-bootstrap"; 
+import { ProjectCard } from "./ProjectCard";
+import { Col, Container,Row,Nav,Tab } from "react-bootstrap"; 
+import ColorSharp2 from '../assets/img/color-sharp2.png';
 export const Projects = ()=>{
     const projects = [{
-        "title" : "React Project",
-        "description" : "",
-        "imgURL" : ""
+        title : "React Project",
+        description : "React Project",
+        imgURL : projImg1
     },
     {
         "title" : "Simple Calculator",
-        "description" : "",
-        "imgURL" : ""
+        "description" : "HTML, CSS & JavaScript project",
+        "imgURL" : projImg2
     },{
         "title" : "Zomato-clone",
-        "description" : "",
-        "imgURL" : ""
+        "description" : "React project",
+        "imgURL" : projImg3
     },{
         "title" : "E-Commerce API",
-        "description" : "",
-        "imgURL" : ""
+        "description" : "MERN project",
+        "imgURL" : projImg4
     }]
  return(
-    <div></div>
+    <section className="project" id="projects">
+        <Container>
+         <Row>
+            <Col>
+                <h2>Projects</h2>
+                <p>Lorem ipsum....Lorem ipsum....Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" defaultActiveKey="/home">
+                        <Nav.Item>
+                            <Nav.Link eventKey="first">Tab one</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="second">Tab two</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link eventKey="third">
+                            Tab three
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                    <Tab.Content>
+                        <Tab.Pane eventKey="first">
+                          <Row>
+                            {
+                                projects.map((project,index)=>{
+                                    return (
+                                        <ProjectCard key={index} {...project}/>
+                                    )
+                                })
+                            }
+                          </Row>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="second">Lorem Ipsum</Tab.Pane>
+                        <Tab.Pane eventKey="third">Lorem Ipsum</Tab.Pane>
+                    </Tab.Content>
+                </Tab.Container>
+            </Col>
+         </Row>
+        </Container>
+        <img className="background-img-right" src={ColorSharp2} alt="background img2"/>
+    </section>
  )
 } 

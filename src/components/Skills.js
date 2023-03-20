@@ -15,7 +15,7 @@ export const Skills=()=>{
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 3
+          items: 4
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
@@ -55,10 +55,7 @@ export const Skills=()=>{
                        <img className="img-fluid" src={meter3} alt='project 3'/>
                        <h5>Data Structures and Algorithms</h5>
                       </div>
-                             
-                    </Carousel>
-                    <Carousel responsive={responsive} infinite={true} className="skill-slider mt-5">
-                    <div className="item">
+                      <div className="item">
                        <img className="img-fluid" src={meter3} alt='project 1'/>
                        <h5>ReactJS</h5>  
                       </div>
@@ -74,10 +71,7 @@ export const Skills=()=>{
                        <img className="img-fluid" src={meter3} alt='project 1'/>
                        <h5>ExpressJS</h5>  
                       </div>
-                      
-                    </Carousel>
-                    <Carousel responsive={responsive} infinite={true} className="skill-slider mt-5">
-                    <div className="item">
+                      <div className="item">
                        <img className="img-fluid" src={meter2} alt='project 1'/>
                        <h5>SQL</h5>  
                       </div>
@@ -97,14 +91,13 @@ export const Skills=()=>{
                        <img className="img-fluid" src={meter1} alt='project 1'/>
                        <h5>Communication Skills</h5>  
                       </div>
-                      
                     </Carousel>
                     
                </div>
                </Col>
             </Row>
          </Container>
-         <img className="background-image-left img-fluid" src={colorSharp} alt="background img"/>
+         <img className="background-image-left " src={colorSharp} alt="background"/>
     </section>
  )   
 }

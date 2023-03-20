@@ -23,7 +23,7 @@ export const Projects = ()=>{
     },{
         "title" : "E-Commerce API",
         "description" : "MERN project",
-        "imgURL" : projImg4
+        "imgURL" : ProjImg3
     }]
  return(
     <section className="project" id="projects">
@@ -33,7 +33,7 @@ export const Projects = ()=>{
                 <h2>Projects</h2>
                 <p>Lorem ipsum....Lorem ipsum....Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav variant="pills" defaultActiveKey="/home">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                         <Nav.Item>
                             <Nav.Link eventKey="first">Tab one</Nav.Link>
                         </Nav.Item>
@@ -65,7 +65,7 @@ export const Projects = ()=>{
             </Col>
          </Row>
         </Container>
-        <img className="background-img-right" src={ColorSharp2} alt="background img2"/>
+        <img className="background-image-right" src={ColorSharp2} alt="background img2" />
     </section>
  )
 } 

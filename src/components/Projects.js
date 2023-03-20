@@ -2,20 +2,24 @@ import React from "react";
 import { ProjectCard } from "./ProjectCard";
 import { Col, Container,Row,Nav,Tab } from "react-bootstrap"; 
 import ColorSharp2 from '../assets/img/color-sharp2.png';
+import ProjImg1 from '../assets/img/project-img1.png';
+import ProjImg2 from '../assets/img/project-img2.png';
+import ProjImg3 from '../assets/img/project-img3.png';
+
 export const Projects = ()=>{
     const projects = [{
         title : "React Project",
         description : "React Project",
-        imgURL : projImg1
+        imgURL : ProjImg1
     },
     {
         "title" : "Simple Calculator",
         "description" : "HTML, CSS & JavaScript project",
-        "imgURL" : projImg2
+        "imgURL" : ProjImg2
     },{
         "title" : "Zomato-clone",
         "description" : "React project",
-        "imgURL" : projImg3
+        "imgURL" : ProjImg3
     },{
         "title" : "E-Commerce API",
         "description" : "MERN project",

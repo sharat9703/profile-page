@@ -42,5 +42,7 @@
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
-  }
+  },
+  "homepage":"http://sharat9703.github.io/profile-page"
+
 }
